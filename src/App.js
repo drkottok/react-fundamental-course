@@ -1,21 +1,19 @@
 import React, {useState} from 'react';
 import Counter from "./components/Counter";
 import ClassCounter from "./components/ClassCounter";
-
+import PostItem from "./components/PostItem";
+import './styles/App.css';
 
 function App() {
 
-    const [value, setValue]= useState('текст - dr. kottok')
-    // console.log(Likes)
-    // console.log(setLikes)
 
 
 
     return (
         <div className="App">
-            <ClassCounter/>
-            <ClassCounter/>
-            <ClassCounter/>
+            <PostItem post= {{id: 1, title:'javascrupt1', body: 'Deskription1'}}/>
+            <PostItem post= {{id: 2, title:'javascrupt2', body: 'Deskription2'}}/>
+            <PostItem post= {{id: 3, title:'javascrupt3', body: 'Deskription3'}}/>
         </div>
 
     );
